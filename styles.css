@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Niramit:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100vh;;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://www.hdwallpapers.in/thumbs/2021/wall_board_lights_black_background_4k_hd_black_background-t2.jpg");
+    background-size: cover;
+    background-position: center;
+
+  }
+
+label {
+    cursor: pointer;
+}
+
+.name {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 300px;
+    color: #fff;
+    font-family: 'Niramit', sans-serif;
+}
+
+.name h1 {
+    font-size: 30px;
+}
+
+.name2 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(140%);
+    padding-left: 1000px;
+    color: #fff;
+    font-family: 'Niramit', sans-serif;
+}
+
+.name2 h2 {
+    font-size: 30px;
+}
+
+.image-container {
+    float: right;
+    width: 30%;
+}
+
+.image-container2 {
+    float: left;
+    width: 30%;
+    margin-top: 200px;
+    margin-left: 280px;
+}
+
+.footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+
+.header {
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Cinzel', serif; 
+}
+
+.navbar {
+    width: 90%;
+    margin: 35px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
