@@ -7,10 +7,22 @@
 }
 
 .wrapper {
-    min-height: 100vh;;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-image: url("https://www.hdwallpapers.in/thumbs/2021/wall_board_lights_black_background_4k_hd_black_background-t2.jpg");
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .wrapper2 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("https://t4.ftcdn.net/jpg/01/79/07/77/360_F_179077796_P6UNHX6KBpb1hITJSF1gN173qw4GF98U.jpg");
     background-size: cover;
     background-position: center;
 
@@ -20,6 +32,7 @@ label {
     cursor: pointer;
 }
 
+/*Homepage*/
 .name {
     width: 100%;
     position: absolute;
@@ -48,6 +61,20 @@ label {
     font-size: 30px;
 }
 
+.name3 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(330%);
+    padding-left: 300px;
+    color: #fff;
+    font-family: 'Niramit', sans-serif;
+}
+
+.name3 h3 {
+    font-size: 30px;
+}
+
 .image-container {
     float: right;
     width: 30%;
@@ -60,11 +87,43 @@ label {
     margin-left: 280px;
 }
 
+.image-container3 {
+    float: right;
+    width: 30%;
+    margin-top: 140px;
+}
+
 .footer p {
     color: #fff;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
 }
+/*Homepage*/
+
+/*OrientationDay*/
+.orientationDaypic{ 
+    display: flex;
+    gap: 150px;
+    margin-top: 80px;
+}
+
+.text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    padding-left: 300px;
+    color: #fff;
+    font-family: 'Niramit', sans-serif;
+
+}
+
+.text h1 {
+    margin: auto;
+    width: 40%;
+    transform: translateY(-400%);
+}
+
 
 .header {
     font-size: 35px;
@@ -72,8 +131,9 @@ label {
     font-family: 'Cinzel', serif; 
 }
 
+/*navmenu*/
 .navbar {
-    width: 90%;
+    width: 86%;
     margin: 35px;
     padding: 35px;
     display: flex;
