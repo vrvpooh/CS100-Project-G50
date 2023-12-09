@@ -3,13 +3,6 @@ const config = {
 };
 const port = 8000;
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
-
 // Function to validate Firstname and Lastname
 function validateName() {
   const fullnameInput = document.getElementById("fullname");
@@ -187,3 +180,11 @@ const formInputs = document.querySelectorAll("#myForm input");
     formInputs.forEach(input => {
       input.addEventListener("input", handleInputChange);
     });
+
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active');
+});
+
