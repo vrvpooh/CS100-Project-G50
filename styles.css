@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("https://www.hdwallpapers.in/thumbs/2021/wall_board_lights_black_background_4k_hd_black_background-t2.jpg");
+    background-image: url("https://images8.alphacoders.com/133/thumbbig-1337140.webp");
     background-size: cover;
     background-position: center;
 }
@@ -62,7 +62,7 @@
     padding: 35px;
     display: flex;
     align-items: center;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
 .navbar-links ul {
@@ -100,8 +100,23 @@
 }
 
 .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 
 @media (max-width: 800px) {
     .navbar {
@@ -116,6 +131,7 @@
     .navbar-links {
         display: none;
         width: 100%;
+        text-align: center;
     }
 
     .navbar-links ul {
@@ -133,8 +149,9 @@
 
     .navbar-links.active {
         display: flex;
+
+        
     }
-    
     .navbar-links ul li::after {
         display: none;
     }
