@@ -1,6 +1,7 @@
 const config = {
   backendUrl: "http://localhost:8000/", // Default backend URL
 };
+
 const port = 8000;
 
 // Function to validate Firstname and Lastname
@@ -91,7 +92,7 @@ function validateFormOnInput() {
 async function submitForm(event) {
   event.preventDefault();
 
-  // Validate form inputs before submission
+    // Validate form inputs before submission
   if (!validateName() || !validateStudentID() || !validateEmail() || !validateMajor() || !validateActivity()) { 
     return;
   }
