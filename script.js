@@ -148,8 +148,8 @@ async function submitForm(event) {
 
       document.getElementById("myForm").reset();
 
-      const submittedDataContainer = document.getElementById("submittedDataContainer");
-      submittedDataContainer.innerHTML = `<h2>ข้อมูลที่ถูกส่ง:</h2><pre>${formattedData}</pre>`;
+      const submittedDataElement = document.getElementById("submittedData");
+      submittedDataElement.innerText = JSON.stringify(responseData.data, null, 2);
       
     } else {
       console.error("Failed to submit form data.");
