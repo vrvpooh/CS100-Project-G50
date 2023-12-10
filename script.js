@@ -1,5 +1,5 @@
 const config = {
-  backendUrl: "http://54.234.140.113:8000/", // Default backend URL
+  backendUrl: "http://localhost:8000/", // Default backend URL
 };
 const port = 8000;
 
